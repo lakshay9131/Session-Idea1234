@@ -1,0 +1,10 @@
+<input type="text" id="userid" placeholder="login">
+<input type="text" id="pass" placeholder="pass">
+<button onclick="redirect()">Submit</button>
+<script>
+    function redirect() {
+        var u = document.getElementById("userid").value;
+        var p = document.getElementById("pass").value;
+        window.location = window.location + "/" + u + "/" + p;
+    }
+</script>
