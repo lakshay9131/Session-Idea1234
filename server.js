@@ -1,5 +1,7 @@
 var express = require("express")
 
+// Security We can add Api Limiters, Helmet js, Bycrypt for password hashing ,etc middlewares 
+
 var app = express()
 const fs = require('fs');
 const path = require('path');
@@ -52,7 +54,7 @@ console.log(mongo.result)
     //null
 
 
-const uri = "mongodb+srv://mongodbtrial:mongodbtrial@cluster0.mzf3e.mongodb.net/db01?retryWrites=true&w=majority";
+const uri = "mongodb+srv://username:password@cluster0.mzf3e.mongodb.net/database?retryWrites=true&w=majority";
 
 const session = require("express-session")
 
