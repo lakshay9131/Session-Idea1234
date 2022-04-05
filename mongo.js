@@ -1,7 +1,7 @@
 const { Mongo, ServerApiVersion } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient
 
-const uri = "mongodb+srv://mongodbtrial:mongodbtrial@cluster0.mzf3e.mongodb.net/db01?retryWrites=true&w=majority";
+const uri = "mongodb+srv://username:password@cluster0.mzf3e.mongodb.net/databasename?retryWrites=true&w=majority";
 //const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 module.exports.insert = async function(insert, id) {
     module.exports.result = 0;
@@ -20,7 +20,7 @@ module.exports.insert = async function(insert, id) {
             const db = client.db("db01")
 
 
-            const collection = db.collection("collection");
+            const collection = db.collection("collection");//collection name
             console.log(insert + "" + id);
             switch (id) {
 
